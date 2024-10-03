@@ -1,0 +1,46 @@
+.backdrop {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  background-color: #0b0a0a66;
+}
+
+.modal {
+  padding-block: 95px 93px;
+  overflow: auto;
+  width: 320px;
+  height: 100dvh;
+  margin-inline: auto;
+}
+
+.modal-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.modal-nav-link {
+  font-size: 18px;
+}
+
+.modal-nav-link:active,
+.modal-nav-link:visited {
+  color: var(--ivory80);
+}
+
+.close-btn {
+  position: absolute;
+  padding: 0;
+  top: 6px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.close-icon {
+  stroke: var(--ivory);
+}

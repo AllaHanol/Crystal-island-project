@@ -1,0 +1,28 @@
+.hero-section {
+  padding-top: 63px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 220px;
+  }
+}
+
+.hero-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  padding-top: 37px;
+  padding-bottom: 16px;
+  line-height: 100%;
+  color: var(--orange);
+  @media screen and (min-width: 1200px) {
+    font-size: 74px;
+  }
+}
+
+.hero-description {
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  line-height: 100%;
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+  }
+}
