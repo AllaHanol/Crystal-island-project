@@ -1,11 +1,11 @@
 {
-  "name": "CristalIslandProject",
+  "name": "cristal-island-project",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/CristalIslandProject/",
+    "build": "vite build --base=/cristal-island-project/",
     "preview": "vite preview"
   },
   "devDependencies": {
