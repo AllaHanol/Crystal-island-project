@@ -17,13 +17,13 @@
     "postcss-sort-media-queries": "^5.2.0",
     "sass": "^1.79.4",
     "sharp": "^0.33.5",
-    "vite": "^5.4.2",
-    "vite-plugin-image-optimizer": "^1.1.8"
+    "vite": "^5.4.2"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.2.0",
-    "vite-plugin-html-inject": "^1.1.2"
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-image-optimizer": "^1.1.8"
   }
 }
