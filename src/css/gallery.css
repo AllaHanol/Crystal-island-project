@@ -7,3 +7,102 @@ text-align: center;
 color: #FFA600;
 padding-bottom: 24px;
 }
+
+/* .gallery-wrapper {
+  overflow: hidden;
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+} */
+/* Обгортка для слайдів */
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 810px; /* Відображаємо три картинки (270px * 3) */
+  position: relative;
+  perspective: 1000px;/* Перспектива для "випинання" центральної картинки */
+
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+  width: 270px;
+  height: 393px;
+  flex-shrink: 0;
+  transition: transform 0.5s ease, opacity 0.5s;
+  opacity: 0.7;
+  transform: scale(0.8);
+}
+
+.gallery-item.active {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* Загальний контейнер галереї */
+.gallery-container {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+/* Кожен слайд */
+.gallery-slide {
+  min-width: 270px;
+  height: 393px;
+  margin: 0 24px;
+  flex-shrink: 0; /* Не дає зображенню зменшуватися */
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.gallery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Стиль для центральної картинки */
+.gallery-slide.active {
+  transform: scale(1.2); /* Збільшуємо центральну картинку */
+  z-index: 10;
+}
+
+/* Кнопки навігації */
+.gallery-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-nav button {
+  background-color:transparent;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.gallery-nav button:hover {
+  color: #555;
+}
