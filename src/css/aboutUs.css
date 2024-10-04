@@ -1,0 +1,21 @@
+.title-AboutUs {
+font-family: Rubik;
+font-weight: 500;
+font-size: 44px;
+line-height: 100%;
+text-align: center;
+color: #FFA600;
+padding-bottom: 24px;
+}
+.aboutUs-line{
+  display: flex;
+  justify-content: space-between;
+
+}
+.aboutUs-line{
+font-weight: 400;
+font-size: 20px;
+line-height: 130%;
+text-align: center;
+
+}

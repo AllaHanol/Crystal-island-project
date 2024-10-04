@@ -1,21 +1,107 @@
-/* .footer {
-  padding: 20px 0;
+/* .footer{
+  background: #447875;
+  min-height: 104px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-.footer-desc {
-  text-align: center;
+  .nav-link-footer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: right;
+    color: #fffeec;
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+
+  .nav-link-footer:hover,
+  .nav-link-footer:focus {
+    text-shadow: 0 1px 8px 0 #b3ab1d;
+  }
+
+.nav-item-footer {
+  padding-bottom: 14px;
 }
-.footer-link {
-  position: relative;
+.nav-list-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
-} */
+  @media only screen and (min-width: 12000px) {
+    .nav-list-footer{
+      justify-content: flex-end;
+
+    }
+  } */
+
+.footer {
+  background: #447875;
+  min-height: 68px;
+  }
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  align-items: center;
+}
+.text-footer {
+display: block;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+text-align: center;
+padding-bottom: 16px;
+padding-top: 14px;
+}
+
+.nav-list-footer {
+  display: flex;
+  align-items: center;
+  justify-content: inherit;
+  margin-bottom: 32px;
+}
+
+.nav-link-footer {
+  font-size: 12px;
+
+}
+  .nav-link-footer:hover,
+  .nav-link-footer:focus {
+    text-shadow: 0 1px 8px 0 #b3ab1d;
+  }
+
+  @media only screen and (min-width: 12000px) {
+    .footer{
+      min-height: 104px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+    }
+    .container-footer {
+    display: flex;
+    align-items: center;
+}
+    .text-footer{
+      font-size: 16px;
+    }
+
+    .nav-list-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    gap: 24px;
+    align-items: center;
+    margin-right: 250px;
+
+    }
+  .nav-link-footer{
+    font-size: 16px;
+  }
+
+  }
