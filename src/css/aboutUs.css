@@ -34,7 +34,7 @@ gap: 20px;
 
 .aboutUs-img {
   width: 100%;
-  /* max-width: 288px; */
+  max-width: 288px;
   height: auto;
   border-radius: 8px;
 }
