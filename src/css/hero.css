@@ -5,6 +5,28 @@
   }
 }
 
+.hero-container {
+  position: relative;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.hero-monkey {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    top: -220px;
+    left: 200px;
+    width: 214px;
+    height: auto;
+    z-index: 10;
+  }
+}
+
 .hero-title {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
@@ -15,14 +37,94 @@
   color: var(--orange);
   @media screen and (min-width: 1200px) {
     font-size: 74px;
+    padding-bottom: 60px;
+    padding-top: 0;
   }
 }
 
 .hero-description {
   font-family: 'Rubik', sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 100%;
+  padding-bottom: 44px;
   @media screen and (min-width: 1200px) {
     font-size: 32px;
+    width: 466px;
+    padding-bottom: 100px;
   }
+}
+
+.hero-pics-list {
+  display: flex;
+  flex-direction: row;
+  padding-left: 44px;
+  gap: 17px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    gap: 39px;
+  }
+}
+
+.hero-img-item {
+  position: relative;
+}
+
+.hero-blur {
+  position: absolute;
+  inset: -2px;
+  background-color: #d9d9d9;
+  filter: blur(12px);
+  z-index: -1;
+  transform: rotate(21deg);
+  @media screen and (min-width: 1200px) {
+    filter: blur(36px);
+  }
+}
+
+.hero-img-wrapper {
+  width: 98px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  box-shadow: 0 16px 16px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transform: rotate(21deg);
+  @media screen and (min-width: 1200px) {
+    width: 220px;
+  }
+}
+
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-btn {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  border-radius: 40px;
+  padding: 19px 63px;
+  width: 288px;
+  height: 60px;
+  border: none;
+  background-color: #1db342;
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+  transition: background-color var(--bezier);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  outline: none;
+  background-color: var(--dirty-gold);
+}
+
+.hero-btn:active {
+  background-color: transparent;
+  border: 1px solid #4d4d4d;
 }
