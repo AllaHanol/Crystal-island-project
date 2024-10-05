@@ -5,6 +5,14 @@
   }
 }
 
+.hero-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
 .hero-title {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
@@ -15,15 +23,21 @@
   color: var(--orange);
   @media screen and (min-width: 1200px) {
     font-size: 74px;
+    padding-bottom: 60px;
+    padding-top: 0;
   }
 }
 
 .hero-description {
   font-family: 'Rubik', sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 100%;
+  padding-bottom: 44px;
   @media screen and (min-width: 1200px) {
     font-size: 32px;
+    width: 466px;
+    padding-bottom: 100px;
   }
 }
 
@@ -32,6 +46,10 @@
   flex-direction: row;
   padding-left: 44px;
   gap: 17px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    gap: 39px;
+  }
 }
 
 .hero-img-item {
@@ -40,11 +58,14 @@
 
 .hero-blur {
   position: absolute;
-  inset: 0;
+  inset: -2px;
   background-color: #d9d9d9;
   filter: blur(12px);
   z-index: -1;
   transform: rotate(21deg);
+  @media screen and (min-width: 1200px) {
+    filter: blur(36px);
+  }
 }
 
 .hero-img-wrapper {
@@ -54,9 +75,27 @@
   box-shadow: 0 16px 16px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   transform: rotate(21deg);
+  @media screen and (min-width: 1200px) {
+    width: 220px;
+  }
 }
 
 .hero-img {
   width: 100%;
   object-fit: cover;
+}
+
+.hero-btn {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  border-radius: 40px;
+  padding: 19px 63px;
+  width: 288px;
+  height: 60px;
+  background-color: #1db342;
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
