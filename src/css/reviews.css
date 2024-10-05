@@ -7,53 +7,90 @@ text-align: center;
 color: #FFA600;
 padding-bottom: 24px;
 }
-.reviews-container{
+.reviews-slider{
   display: flex;
+  gap:24px;
+  position: relative;
+  left: 0;
+  transition: all 0.5s ease;
+}
+/* Основні стилі карточки */
+.review-card {
+    background-color: #4c8272;
+    border-radius: 12px;
+    padding: 11px 19px;
+    width: 288px; /* або 270px для descktop версії */
+    color: white;
+    text-align: left;
+}
+
+/* Стиль для верхньої частини (фото і інформація) */
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.profile-img {
+    max-width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.review-date {
+    font-size: 10px;
+
+}
+
+.review-text {
+    font-size: 14px;
+    margin: 12px 0;
+    justify-content: flex-end;
+}
+
+/* Стиль для рейтингу (зірочок) */
+.review-rating {
+    text-align: center;
+}
+
+.review-rating span {
+    font-size: 1.5rem;
+    color:  #ffd233;
+}
+
+.reviews-controls{
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 32px;
-}
-.review-card{
-  display: flex;
-  align-items: center;
-padding: 11px 19px;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 20px;
-  background-color: rgb(68, 97, 107, 0.58);
-  width: 288px;
-  height: 134px;
-  gap: 16px;
+  gap: 300px;
+  background-color: transparent;
 
 }
-.review-text{
-  padding-bottom: 4px;
-}
-.review-stars{
-  display: flex;
-  gap: 4px;
-}
-
-/* .reviews-list {
-  display: flex;
-  margin-bottom: 32px;
-}
-.reviews-item {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 32px 24px;
-  border-radius: 20px;
-  border-color: #fafafa;
-  color: #fafafa;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  min-height: 352px;
+.reviews-next-btn, .reviews-prev-btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
-@media only screen and (min-width: 1440px) {
-  .reviews-item {
-    width: calc((100% - 16px * 3) / 4);
-    box-sizing: border-box;
-  }
+.reviews-next-btn, .reviews-prev-btn:hover
+.reviews-next-btn, .reviews-prev-btn:active
+.reviews-next-btn, .reviews-prev-btn:focus{
+  box-shadow: 0 0 10px 0 rgba(223, 218, 218, 0.7);
+
+
 }
-.reviews-img {
-  margin-bottom: 32px;
-  border-radius: 10%;
-} */
