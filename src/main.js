@@ -2,4 +2,4 @@
 import './js/reviews';
 import './js/gallery';
 import './js/header';
-
+import './js/header';
