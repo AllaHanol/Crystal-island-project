@@ -28,6 +28,7 @@ body {
     padding-bottom: 120px;
   }
   .container {
+    padding-inline: 24px;
     max-width: 1200px;
   }
 }
