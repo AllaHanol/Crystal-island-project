@@ -6,6 +6,7 @@
   --ivory80: #fffeec80;
   --dirty-gold: #b3ab1d;
   --emerald: #449782;
+  --bezier: 250ms cubic-bezier(0.25, 0.1, 0.25, 1) 1ms;
 }
 
 html {
@@ -83,6 +84,7 @@ html {
 
 .header-nav-link {
   font-size: 18px;
+  transition: text-shadow var(--bezier);
 }
 
 .header-nav-link:hover,
@@ -91,7 +93,8 @@ html {
   text-shadow: 0 1px 8px var(--dirty-gold);
 }
 
-.header-nav-link:active {
+.header-nav-link:active,
+.header-nav-link:visited {
   color: var(--ivory80);
   text-shadow: none;
 }

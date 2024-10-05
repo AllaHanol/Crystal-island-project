@@ -24,6 +24,7 @@
 
 .modal-nav-link {
   font-size: 18px;
+  transition: text-shadow var(--bezier);
 }
 
 .modal-nav-link:active,

@@ -86,6 +86,8 @@
 }
 
 .hero-btn {
+  display: block;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 130%;
@@ -94,8 +96,21 @@
   padding: 19px 63px;
   width: 288px;
   height: 60px;
+  border: none;
   background-color: #1db342;
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
+  transition: background-color var(--bezier);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  outline: none;
+  background-color: var(--dirty-gold);
+}
+
+.hero-btn:active {
+  background-color: transparent;
+  border: 1px solid #4d4d4d;
 }
