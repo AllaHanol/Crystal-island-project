@@ -6,10 +6,24 @@
 }
 
 .hero-container {
+  position: relative;
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+}
+
+.hero-monkey {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    top: -220px;
+    left: 200px;
+    width: 214px;
+    height: auto;
+    z-index: 10;
   }
 }
 
@@ -87,7 +101,7 @@
 
 .hero-btn {
   display: block;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 130%;
