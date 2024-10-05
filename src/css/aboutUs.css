@@ -1,0 +1,50 @@
+.title-AboutUs {
+font-family: Rubik;
+font-weight: 500;
+font-size: 44px;
+line-height: 100%;
+text-align: center;
+color: #FFA600;
+padding-bottom: 24px;
+}
+
+.section-aboutUs {
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff; /* колір тексту */
+}
+
+.aboutUs-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 130%;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+
+}
+.aboutUs-container-img{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+text-align: center;
+gap: 20px;
+
+}
+
+.aboutUs-img {
+  width: 100%;
+  /* max-width: 288px; */
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .images-container {
+    flex-direction: column;
+  }
+
+  .images-container img {
+    max-width: 270px;
+  }
+}
