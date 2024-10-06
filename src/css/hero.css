@@ -71,14 +71,14 @@
 }
 
 .hero-blur {
-  position: absolute;
-  inset: -2px;
-  background-color: #d9d9d9;
-  filter: blur(12px);
-  z-index: -1;
-  transform: rotate(21deg);
   @media screen and (min-width: 1200px) {
-    filter: blur(36px);
+    position: absolute;
+    inset: 0;
+    background-color: #d9d9d9;
+    filter: blur(11px);
+    z-index: -1;
+    transform: rotate(21deg);
+    filter: blur(100px);
   }
 }
 
@@ -91,6 +91,7 @@
   transform: rotate(21deg);
   @media screen and (min-width: 1200px) {
     width: 220px;
+    border-radius: 24px;
   }
 }
 
