@@ -4,6 +4,7 @@
   --porcelain: #f2f2f2;
   --ivory: #fffeec;
   --ivory80: #fffeec80;
+  --gray: #435d5d;
   --dirty-gold: #b3ab1d;
   --emerald: #449782;
   --bezier: 250ms cubic-bezier(0.25, 0.1, 0.25, 1) 1ms;
@@ -111,5 +112,5 @@ html {
 }
 
 .header-burger-icon {
-  stroke: var(--porcelain);
+  stroke: var(--ivory);
 }
