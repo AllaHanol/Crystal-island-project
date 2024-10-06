@@ -10,21 +10,26 @@
 .modal {
   padding-block: 95px 93px;
   overflow: auto;
-  width: 320px;
+  min-width: 320px;
   height: 100dvh;
   margin-inline: auto;
 }
 
 .modal-nav-list {
   display: flex;
-  flex-direction: column;
-  gap: 50px;
   align-items: center;
+  flex-direction: column;
+  gap: 36px;
 }
 
 .modal-nav-link {
+  display: block;
+  text-align: center;
   font-size: 18px;
   transition: text-shadow var(--bezier);
+  padding: 8px 0px;
+  width: 320px;
+  height: 40px;
 }
 
 .modal-nav-link:active,
