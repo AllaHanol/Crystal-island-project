@@ -7,44 +7,70 @@ text-align: center;
 color: #FFA600;
 padding-bottom: 24px;
 }
-
-.section-aboutUs {
-  text-align: center;
-  padding: 40px 20px;
-  color: #fff; /* колір тексту */
+/* Основний контейнер */
+.game-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.aboutUs-text {
+/* Стилі для картинок */
+.image-block img {
+  width: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+/* Секція опису */
+.description-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 564px;
+  min-height: 481px;
+}
+
+.description-text {
   font-size: 20px;
   font-weight: 400;
+  align-items: center;
   line-height: 130%;
-  max-width: 800px;
-  margin: 0 auto 40px auto;
+  padding-bottom: 8px;
 
 }
-.aboutUs-container-img{
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;
-text-align: center;
-gap: 20px;
-
-}
-
-.aboutUs-img {
-  width: 100%;
+.description-img-2{
   max-width: 288px;
   height: auto;
-  border-radius: 8px;
+
+
 }
 
-@media (max-width: 768px) {
-  .images-container {
-    flex-direction: column;
+/* Медійні запити для адаптивності */
+@media (min-width: 1200px) {
+  .game-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .game-section {
+    align-items: flex-start;
+
   }
 
-  .images-container img {
-    max-width: 270px;
+  .image-block img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .description-block {
+    text-align: left;
+    max-width: 564px;
+    min-height: 481px;
+    }
+  .description-img-2{
+    max-width: 564px;
+    min-height: 268px;
+    padding-top: 94px;
   }
 }
