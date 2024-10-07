@@ -11,6 +11,12 @@
   }
 }
 
+.advantages-section {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
+
 .adv-swiper {
   position: relative;
   overflow: hidden;
@@ -39,6 +45,9 @@
   display: flex;
   position: relative;
   padding-bottom: 49px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 224px;
+  }
 }
 
 .adv-list-item {
@@ -56,6 +65,13 @@
   }
 }
 
+div.swiper-pagination {
+  z-index: 1;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
 span.swiper-pagination-bullet {
   border: 2px solid #435d5d;
   opacity: 1;
@@ -65,6 +81,48 @@ span.swiper-pagination-bullet {
 }
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  mask: unset;
   background-color: #435d5d;
+}
+
+div.adv-button-prev,
+div.adv-button-next {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 577px;
+    width: 20px;
+    height: 37px;
+    z-index: 1;
+    cursor: pointer;
+    color: #435d5d;
+  }
+}
+
+div.adv-button-next {
+  right: 392px;
+}
+
+div.adv-button-prev {
+  left: 392px;
+}
+
+.adv-swiper-icon {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  fill: #435d5d;
+  transition: stroke var(--bezier);
+}
+
+.adv-swiper-icon:hover,
+.adv-swiper-icon:focus {
+  stroke: rgba(223, 218, 218, 0.7);
+}
+
+div.swiper-button-next::after,
+div.swiper-button-prev::after {
+  content: '';
 }
