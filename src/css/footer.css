@@ -9,7 +9,8 @@
   align-items: center;
   padding-top: 14px;
   padding-bottom: 14px;
-  gap:16px;
+  gap: 16px;
+
 
 }
 .text-footer {
@@ -34,28 +35,26 @@
 
   @media only screen and (min-width: 1200px) {
     .footer{
-  min-height: 104px;
-  min-width: 1200px;
-
+   min-height: 104px;
+   min-width: 1200px;
+   align-items: end;
 
     }
     .container-footer {
-      /* min-height: 104px;
-      min-width: 1200px; */
-    justify-content: flex-end;
-
+      display: flex;
+      
+      gap: 136px;
+      justify-content: flex-end;
     }
     .text-footer{
       font-size: 16px;
-
-
     }
     .nav-list-footer{
     display: flex;
-    width: 368px;
-    align-items: center;
+    /* width: 368px; */
+    align-items: end;
     margin-bottom: 0;
-    gap: 24px;
+
     }
 
 
