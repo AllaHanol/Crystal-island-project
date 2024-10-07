@@ -6,22 +6,44 @@ line-height: 100%;
 text-align: center;
 color: #FFA600;
 padding-bottom: 24px;
+
+}
+.reviews-container{
+  overflow: hidden;
+  justify-content: center;
+  width: 100%;
+
+
 }
 .reviews-slider{
-  display: flex;
+
   gap:24px;
   position: relative;
   left: 0;
   transition: all 0.5s ease;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
 }
+.reviews-slider::-webkit-scrollbar {
+  display: none;
+}
+
 /* Основні стилі карточки */
 .review-card {
-    background-color: #4c8272;
-    border-radius: 12px;
+    background-color: #446168;
+    border-radius: 24px;
     padding: 11px 19px;
     width: 288px; /* або 270px для descktop версії */
-    color: white;
     text-align: left;
+    min-height: 134px;
+    position: relative;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+
 }
 
 /* Стиль для верхньої частини (фото і інформація) */
@@ -29,6 +51,7 @@ padding-bottom: 24px;
     display: flex;
     align-items: center;
     margin-bottom: 12px;
+    position:absolute;
 }
 
 .profile-img {
@@ -43,40 +66,53 @@ padding-bottom: 24px;
 .review-info {
     display: flex;
     flex-direction: column;
+    width: 163px;
+    height: 94px;
 }
 
 .review-name {
     font-size: 14px;
     font-weight: 500;
     margin: 0;
+
 }
 
 .review-date {
     font-size: 10px;
 
+
 }
 
 .review-text {
     font-size: 14px;
-    margin: 12px 0;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 16px;
     justify-content: flex-end;
+    line-height: 100%;
 }
 
 /* Стиль для рейтингу (зірочок) */
-.review-rating {
-    text-align: center;
-}
 
-.review-rating span {
-    font-size: 1.5rem;
-    color:  #ffd233;
+.reviews-stars{
+  display: flex;
+  width: 86px;
+  height: 15px;
+  gap: 4px;
+
+}
+.reviews-stars-item {
+  align-items: center;
+}
+.icon-white-star-reviews{
+  fill:#fff7f7;
 }
 
 .reviews-controls{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 300px;
+  gap: 30px;
   background-color: transparent;
   padding-top: 26px;
 
