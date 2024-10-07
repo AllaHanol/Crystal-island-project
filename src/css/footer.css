@@ -7,8 +7,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  /* padding-top: 14px;
+  padding-bottom: 14px; */
   gap: 16px;
 
 
@@ -37,23 +37,31 @@
     .footer{
    min-height: 104px;
    min-width: 1200px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: right;
    align-items: end;
+   padding-top: 74px;
+   padding-bottom: 14px;
+   padding-right: 24px;
+   margin: 0 auto;
 
-    }
-    .container-footer {
-      display: flex;
-      
-      gap: 136px;
-      justify-content: flex-end;
+
+  }
+  .container-footer {
+    /* margin: 0 auto;
+    padding: 0 auto; */
+    gap: 136px;
+
+
     }
     .text-footer{
       font-size: 16px;
     }
     .nav-list-footer{
     display: flex;
-    /* width: 368px; */
-    align-items: end;
-    margin-bottom: 0;
+    width: 368px;
 
     }
 
