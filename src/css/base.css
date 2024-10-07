@@ -28,7 +28,7 @@ body {
   }
   .container {
     padding-inline: 24px;
-    max-width: 1200px;
+    min-width: 1200px;
   }
 }
 
