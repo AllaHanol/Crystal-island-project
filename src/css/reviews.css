@@ -11,7 +11,7 @@ padding-bottom: 24px;
 .reviews-container{
   overflow: hidden;
   justify-content: center;
-  width: 100%;
+  max-width: 320px;
 
 
 }
@@ -37,9 +37,9 @@ padding-bottom: 24px;
     background-color: #446168;
     border-radius: 24px;
     padding: 11px 19px;
-    width: 288px; /* або 270px для descktop версії */
-    text-align: left;
+    width: 288px;
     min-height: 134px;
+    text-align: left;
     position: relative;
     flex: 0 0 auto;
     scroll-snap-align: start;
@@ -131,4 +131,17 @@ padding-bottom: 24px;
 .reviews-next-btn, .reviews-prev-btn:active
 .reviews-next-btn, .reviews-prev-btn:focus{
   stroke: rgb(223, 218, 218, 0.7);
+}
+
+@media only screen and (min-width: 1200px) {
+  .reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .review-card{
+min-width: 270px;
+flex: auto;
+
+
+  }
 }
