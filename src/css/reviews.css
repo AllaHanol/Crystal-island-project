@@ -12,6 +12,7 @@ padding-bottom: 24px;
   overflow: hidden;
   justify-content: center;
   max-width: 320px;
+  padding: 0 16px;
 
 
 }
@@ -109,7 +110,7 @@ padding-bottom: 24px;
 }
 
 .reviews-controls{
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -142,6 +143,6 @@ padding-bottom: 24px;
 min-width: 270px;
 flex: auto;
 
-
   }
+  
 }
