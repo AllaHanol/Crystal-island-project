@@ -6,33 +6,43 @@ line-height: 100%;
 text-align: center;
 color: #FFA600;
 padding-bottom: 24px;
+
 }
 .reviews-container{
   overflow: hidden;
-  position: relative;
   justify-content: center;
   width: 100%;
 
 
 }
 .reviews-slider{
-  display: flex;
+
   gap:24px;
   position: relative;
   left: 0;
   transition: all 0.5s ease;
-
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 
 }
+.reviews-slider::-webkit-scrollbar {
+  display: none;
+}
+
 /* Основні стилі карточки */
 .review-card {
-    background-color: #4c8272;
+    background-color: #446168;
     border-radius: 24px;
     padding: 11px 19px;
     width: 288px; /* або 270px для descktop версії */
     text-align: left;
     min-height: 134px;
     position: relative;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
 
 }
 
@@ -41,6 +51,7 @@ padding-bottom: 24px;
     display: flex;
     align-items: center;
     margin-bottom: 12px;
+    position:absolute;
 }
 
 .profile-img {
@@ -63,10 +74,12 @@ padding-bottom: 24px;
     font-size: 14px;
     font-weight: 500;
     margin: 0;
+
 }
 
 .review-date {
     font-size: 10px;
+
 
 }
 
@@ -85,8 +98,6 @@ padding-bottom: 24px;
   display: flex;
   width: 86px;
   height: 15px;
-  /* justify-content: center;
-  align-items: center; */
   gap: 4px;
 
 }
@@ -96,11 +107,6 @@ padding-bottom: 24px;
 .icon-white-star-reviews{
   fill:#fff7f7;
 }
-
-/* .review-rating span {
-    font-size: 1.5rem;
-    color:  #ffd233;
-} */
 
 .reviews-controls{
   display: flex;
