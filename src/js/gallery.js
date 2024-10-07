@@ -16,8 +16,7 @@ export default (() => {
 
     pagination: {
       type: 'bullets',
-      el: '.gallery-controls',
-      clickable: true,
+      el: '.swiper-pagination',
     },
 
     navigation: {
