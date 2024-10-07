@@ -8,6 +8,7 @@
   --dirty-gold: #b3ab1d;
   --emerald: #449782;
   --bezier: 250ms cubic-bezier(0.25, 0.1, 0.25, 1) 1ms;
+  --filler: #d4d5d6;
 }
 
 html {
