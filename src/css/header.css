@@ -14,7 +14,22 @@ html {
   scroll-behavior: smooth;
 }
 
+.header-container-backdrop {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--emerald);
+  z-index: 8;
+  @media screen and (min-width: 1200px) {
+    height: 94px;
+  }
+}
+
 .header-container {
+  margin-inline: auto;
+  max-width: 375px;
   position: fixed;
   padding-top: 4.55px;
   top: 0;
@@ -25,11 +40,12 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--emerald);
+  background-color: transparent;
   padding-inline: 16px;
   @media screen and (min-width: 1200px) {
     padding-top: 42px;
     padding-inline: 24px;
+    max-width: 1200px;
   }
 }
 
