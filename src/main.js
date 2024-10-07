@@ -2,4 +2,4 @@
 import './js/header';
 import './js/advanatages.js';
 import './js/reviews.js';
-import './js/gallery';
+import './js/gallery.js';
