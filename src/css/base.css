@@ -2,11 +2,10 @@
   font-family: Rubik, sans-serif;
   letter-spacing: 0;
   line-height: 100%;
-
 }
 
 body {
-  color: #FFFEEC;
+  color: #fffeec;
   background-color: rgb(68, 151, 130);
 }
 /* Styles for Mobile devices */
@@ -15,8 +14,8 @@ body {
 }
 .container {
   min-width: 320px;
-  max-width: 375px;
-  margin-left:  auto;
+  max-width: 320px;
+  margin-left: auto;
   margin-right: auto;
   padding: 0 16px;
 }
