@@ -43,7 +43,7 @@
 }
 
 .hero-description {
-  font-family: 'Rubik', sans-serif;
+  width: 288px;
   font-weight: 400;
   font-size: 22px;
   line-height: 100%;
@@ -63,6 +63,7 @@
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
     gap: 39px;
+    padding-right: 45px;
   }
 }
 
