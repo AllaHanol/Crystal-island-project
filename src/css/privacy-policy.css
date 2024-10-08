@@ -7,11 +7,6 @@ html {
   min-height: 100dvh;
   overflow: scroll;
 }
-
-body main{
-  /* padding: 0 0 68px; */
-  /* overflow: scroll; */
-}
 .pp-header {
   padding-top: 24px;
   padding-bottom: 24px;
