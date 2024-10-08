@@ -40,7 +40,7 @@
   max-width: 288px;
   overflow: hidden;
   @media screen and (min-width: 1200px) {
-    max-width: 270px;
+    max-width: 368px;
   }
 }
 
@@ -59,16 +59,16 @@ div.gal-button-next {
   display: none;
   @media screen and (min-width: 1200px) {
     display: flex;
-    top: 437px;
+    top: 593px;
     width: 20px;
     height: 37px;
   }
 }
 
 div.gal-button-next {
-  right: 423px;
+  right: 416px;
 }
 
 div.gal-button-prev {
-  left: 423px;
+  left: 416px;
 }
