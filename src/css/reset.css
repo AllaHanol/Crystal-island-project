@@ -1,17 +1,24 @@
 /* Reset styles */
+html, body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6
+{
   margin: 0;
 }
 
-p:last-child {
+/* p:last-child {
   margin-bottom: 0;
-}
+} */
 
 ul, li {
   margin: 0;
@@ -33,3 +40,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+

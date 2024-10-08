@@ -1,10 +1,12 @@
 :root {
   font-family: Rubik, sans-serif;
   letter-spacing: 0;
-  line-height: 100%;
+
 }
 
 body {
+  font-size: 16px;
+  line-height: 1.4;
   color: #fffeec;
   background-color: rgb(68, 151, 130);
 }
@@ -13,8 +15,8 @@ body {
   padding-bottom: 60px;
 }
 .container {
-  min-width: 320px;
-  max-width: 320px;
+  width: 320px;
+
   margin-left: auto;
   margin-right: auto;
   padding: 0 16px;
@@ -26,8 +28,9 @@ body {
     padding-bottom: 120px;
   }
   .container {
-    padding-inline: 24px;
-    min-width: 1200px;
+    /* padding-inline: 24px; */
+    max-width: 1200px;
+    width: 100%;
   }
 }
 

@@ -9,17 +9,13 @@ html {
 }
 
 body main{
-  padding: 0 0 68px;
-  overflow: scroll;
+  /* padding: 0 0 68px; */
+  /* overflow: scroll; */
 }
 .pp-header {
-  padding: 24px;
-  max-width: 320px;
-  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
 }
 
 .pp-btn {
@@ -47,10 +43,4 @@ body main{
   background-color: #63ab1d;
 }
 
-.footer {
-  margin-top: auto;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100dvw;
-}
+
