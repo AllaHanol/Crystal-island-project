@@ -1,144 +1,101 @@
-.title-Reviews {
-font-family: Rubik;
-font-weight: 500;
-font-size: 44px;
-line-height: 100%;
-text-align: center;
-color: #FFA600;
-padding-bottom: 24px;
-
+.title-reviews {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--orange);
+  padding-bottom: 24px;
 }
-.reviews-container{
-  overflow: hidden;
-  justify-content: center;
-  max-width: 320px;
-  padding: 0 16px;
 
-
-}
-.reviews-slider{
-  gap:24px;
+.reviews-slider {
   position: relative;
-  left: 0;
-  transition: all 0.5s ease;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  display: flex;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-
+  overflow: hidden;
+  padding-bottom: 48px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 62px;
+  }
 }
-.reviews-slider::-webkit-scrollbar {
-  display: none;
+
+.reviews-list {
+  display: flex;
+  position: relative;
+  max-width: 320px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+div.reviews-pagination {
+  display: block;
 }
 
 /* Основні стилі карточки */
 .review-card {
-    background-color: #446168;
-    border-radius: 24px;
-    padding: 11px 19px;
-    width: 288px;
-    min-height: 134px;
-    text-align: left;
-    position: relative;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-
+  background-color: #446168;
+  border-radius: 24px;
+  padding: 11px 19px;
+  max-width: 288px;
+  min-height: 134px;
+  text-align: left;
+  position: relative;
+  flex: 0 0 auto;
 }
 
 /* Стиль для верхньої частини (фото і інформація) */
 .review-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    position:absolute;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  position: absolute;
 }
 
 .profile-img {
-    max-width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 16px;
-
+  max-width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
 }
 
 .review-info {
-    display: flex;
-    flex-direction: column;
-    width: 163px;
-    height: 94px;
+  display: flex;
+  flex-direction: column;
+  width: 163px;
+  height: 94px;
 }
 
 .review-name {
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0;
-
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .review-date {
-    font-size: 10px;
-
-
+  font-size: 10px;
 }
 
 .review-text {
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 8px;
-    margin-bottom: 16px;
-    justify-content: flex-end;
-    line-height: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  justify-content: flex-end;
+  line-height: 100%;
 }
 
 /* Стиль для рейтингу (зірочок) */
-
-.reviews-stars{
+.reviews-stars {
   display: flex;
   width: 86px;
   height: 15px;
   gap: 4px;
-
 }
 .reviews-stars-item {
   align-items: center;
 }
-.icon-white-star-reviews{
-  fill:#fff7f7;
-}
-
-.reviews-controls{
-  display: none;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  background-color: transparent;
-  padding-top: 26px;
-
-}
-.reviews-next-btn, .reviews-prev-btn{
-  background-color: transparent;
-  width: 34px;
-  height: 68px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  fill: #435d5d;
-}
-
-.reviews-next-btn, .reviews-prev-btn:hover
-.reviews-next-btn, .reviews-prev-btn:active
-.reviews-next-btn, .reviews-prev-btn:focus{
-  stroke: rgb(223, 218, 218, 0.7);
-}
-
-.reviews-rund{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 22px;
-
+.icon-white-star-reviews {
+  fill: #fff7f7;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -146,13 +103,9 @@ padding-bottom: 24px;
     max-width: 1200px;
     margin: 0 auto;
   }
-  .review-card{
-min-width: 270px;
-flex: auto;
-  }
 
-  .reviews-rund{
-    padding-top: 26px;
+  .review-card {
+    max-width: 270px;
+    flex: auto;
   }
-
 }
