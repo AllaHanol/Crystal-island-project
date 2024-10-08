@@ -5,6 +5,9 @@ import 'swiper/css/bundle';
 
 export default (() => {
   const swiper = new Swiper('.gallery-slider', {
+    effect: 'coverflow',
+    loop: true,
+
     slidesPerView: 'auto',
     spaceBetween: 24,
 
@@ -22,6 +25,20 @@ export default (() => {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+
+    
+    breakpoints: {
+      1200: {
+        centeredSlides: true,
+        initialSlide: 2,
+      },
+    },
+    coverflowEffect: {
+      rotate: 0,
+      stretch: -24,
+      depth: 100,
+      slideShadows: false,
     },
   });
 })();
