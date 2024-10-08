@@ -36,8 +36,8 @@ export default (() => {
     },
     coverflowEffect: {
       rotate: 0,
-      stretch: -24,
-      depth: 100,
+      stretch: -44,
+      depth: 390,
       slideShadows: false,
     },
   });
