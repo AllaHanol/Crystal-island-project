@@ -1,5 +1,5 @@
 {
-  "name": "Crystal-island-project",
+  "name": "crystal-island-project",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -22,7 +22,6 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.7.7",
     "swiper": "^11.1.14",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2",
