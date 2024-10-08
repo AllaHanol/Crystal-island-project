@@ -23,6 +23,10 @@
   line-height: 100%;
   text-align: center;
   color: var(--orange);
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 24px;
+    font-size: 44px;
+  }
 }
 
 .adv-description {

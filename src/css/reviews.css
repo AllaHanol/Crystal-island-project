@@ -1,11 +1,15 @@
 .title-reviews {
   font-family: Rubik;
   font-weight: 500;
-  font-size: 44px;
+  font-size: 36px;
   line-height: 100%;
   text-align: center;
   color: var(--orange);
-  padding-bottom: 24px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    padding-bottom: 24px;
+  }
 }
 
 .reviews-slider {
@@ -102,5 +106,5 @@ div.reviews-pagination {
     margin: 0 auto;
   }
 
- 
+
 }
