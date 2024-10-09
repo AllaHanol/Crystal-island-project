@@ -1,10 +1,11 @@
 .footer {
   background: #447875;
+  width: 100%;
 }
 
 .footer-underline {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 14px;
@@ -31,7 +32,7 @@
 
 @media only screen and (min-width: 1200px) {
   .footer-underline {
-    min-width: 1200px;
+    flex-direction: row;
     justify-content: right;
     align-items: end;
     padding-top: 74px;

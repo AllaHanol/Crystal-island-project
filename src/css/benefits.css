@@ -13,7 +13,7 @@
 }
 
 .benefits-list {
-  max-width: 320px;
+  /* max-width: 320px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

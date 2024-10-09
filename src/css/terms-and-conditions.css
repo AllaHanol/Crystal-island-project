@@ -1,30 +1,42 @@
-.terms-btn{
-background-color: #1DB342;
-border-radius: 24px;
-border: transparent;
-padding: 6px 12px;
-width: 102px;
-height: 24px;
-margin-bottom: 24px;
+@import url('./base.css');
+@import url('./reset.css');
+@import url('./footer.css');
+
+html {
+  position: relative;
+  min-height: 100dvh;
+  overflow: scroll;
 }
-.terms-btn:hover{
-  background-color: #63ab1d;
+
+.terms-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
 }
-.terms-link{
-  font-weight: 400;
-  font-size: 12px;
-  width: 64px;
-  height: 12px;
-  color: #FFFEEC;
-  text-decoration: none;
+
+.terms-btn {
+  align-self: flex-start;
+  display: flex;
+  gap: 6px;
   align-items: center;
   justify-content: center;
-
-
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  border-radius: 24px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 24px;
+  padding: 6px 12px;
+  width: 102px;
+  height: 24px;
+  background-color: #1db342;
+  transition: background-color var(--bezier);
 }
-.terms-section-gotohome{
-  display: flex;
-  justify-content: start;
-  align-items: center;
 
+.terms-btn:hover {
+  background-color: #63ab1d;
 }
+
+

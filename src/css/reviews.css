@@ -1,11 +1,15 @@
 .title-reviews {
   font-family: Rubik;
   font-weight: 500;
-  font-size: 44px;
+  font-size: 36px;
   line-height: 100%;
   text-align: center;
   color: var(--orange);
-  padding-bottom: 24px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    padding-bottom: 24px;
+  }
 }
 
 .reviews-slider {
@@ -36,10 +40,8 @@ div.reviews-pagination {
   border-radius: 24px;
   padding: 11px 19px;
   max-width: 288px;
-  min-height: 134px;
   text-align: left;
-  position: relative;
-  flex: 0 0 auto;
+
 }
 
 /* Стиль для верхньої частини (фото і інформація) */
@@ -47,7 +49,7 @@ div.reviews-pagination {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
-  position: absolute;
+
 }
 
 .profile-img {
@@ -62,7 +64,7 @@ div.reviews-pagination {
   display: flex;
   flex-direction: column;
   width: 163px;
-  height: 94px;
+
 }
 
 .review-name {
@@ -104,8 +106,5 @@ div.reviews-pagination {
     margin: 0 auto;
   }
 
-  .review-card {
-    max-width: 270px;
-    flex: auto;
-  }
+
 }
