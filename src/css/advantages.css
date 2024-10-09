@@ -2,6 +2,7 @@
   max-width: 320px;
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    padding-bottom: 120px;
   }
 }
 
@@ -44,7 +45,7 @@
   position: relative;
   padding-bottom: 49px;
   @media screen and (min-width: 1200px) {
-    padding-bottom: 120px;
+    padding-bottom: 110px;
   }
 }
 
@@ -90,7 +91,7 @@ div.adv-button-next {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 577px;
+    top: 619px;
     width: 20px;
     height: 37px;
     z-index: 1;
