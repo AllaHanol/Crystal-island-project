@@ -12,7 +12,7 @@ body {
 }
 /* Styles for Mobile devices */
 .section {
-  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .container {
   width: 320px;
@@ -24,7 +24,7 @@ body {
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .section {
-    padding-bottom: 120px;
+    padding-top: 120px;
   }
   .container {
     padding: 0 24px;
