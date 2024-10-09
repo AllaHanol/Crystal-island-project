@@ -8,7 +8,7 @@ export default (() => {
     slidesPerView: 'auto',
     spaceBetween: 24,
     loop: true,
-    // grabCursor: true,
+    grabCursor: true,
 
     keyboard: {
       enabled: true,
