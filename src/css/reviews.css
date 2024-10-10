@@ -38,7 +38,7 @@ div.reviews-pagination {
 .review-card {
   background-color: #446168;
   border-radius: 24px;
-  padding: 11px 19px;
+  padding: 10px 19px;
   max-width: 288px;
   text-align: left;
 
@@ -48,7 +48,7 @@ div.reviews-pagination {
 .review-header {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
 
 }
 
@@ -70,18 +70,20 @@ div.reviews-pagination {
 .review-name {
   font-size: 14px;
   font-weight: 500;
+  line-height: 100%;
   margin: 0;
 }
 
 .review-date {
   font-size: 10px;
+  line-height: 0%;
 }
 
 .review-text {
   font-size: 14px;
   font-weight: 400;
   margin-top: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   justify-content: flex-end;
   line-height: 100%;
 }

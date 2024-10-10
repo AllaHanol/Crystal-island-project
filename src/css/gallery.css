@@ -62,9 +62,10 @@
   transition: stroke var(--bezier);
 
 }
-.gal-swiper-icon:hover,
-.gal-swiper-icon:focus {
-  filter: drop-shadow(0 0 5px rgba(223, 218, 218, 0.7));
+.gal-swiper-icon:hover {
+  filter: drop-shadow(0 0 10px rgba(223, 218, 218, 0.7));
+ 
+
 }
 div.gal-button-prev,
 div.gal-button-next {
