@@ -17,6 +17,7 @@
   overflow: hidden;
 }
 
+
 .adv-title {
   font-weight: 500;
   font-size: 36px;
@@ -29,6 +30,11 @@
     font-size: 44px;
   }
 }
+.adv-swiper {
+  position: relative;
+  overflow: hidden;
+}
+
 
 .adv-description {
   display: block;
@@ -97,19 +103,21 @@ div.adv-button-next {
     z-index: 1;
     cursor: pointer;
     color: #435d5d;
+
   }
 }
 
 div.adv-button-next {
-  right: 392px;
+  right: 400px;
 }
 
 div.adv-button-prev {
-  left: 392px;
+  left: 400px;
 }
 
+
 .adv-swiper-icon {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   width: 100%;
   height: 100%;
   fill: #435d5d;

@@ -1,11 +1,7 @@
 .gallery-section {
   padding-bottom: 0;
-}
-
-.gallery-container {
-  max-width: 320px;
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+   @media screen and (min-width: 1200px) {
+    padding-bottom: 120px;
   }
 }
 
@@ -56,9 +52,16 @@
 }
 
 .gallery-pagination {
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 }
 
+.gal-swiper-icon{
+   width: 100%;
+  height: 100%;
+  fill: #435d5d;
+  transition: stroke var(--bezier);
+
+}
 div.gal-button-prev,
 div.gal-button-next {
   display: none;
