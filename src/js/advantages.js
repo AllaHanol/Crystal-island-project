@@ -7,6 +7,8 @@ export default (() => {
   const swiper = new Swiper('.adv-swiper', {
     slidesPerView: 'auto',
     spaceBetween: 24,
+    loop: true,
+    grabCursor: true,
 
     keyboard: {
       enabled: true,

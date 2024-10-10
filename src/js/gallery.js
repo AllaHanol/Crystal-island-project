@@ -5,11 +5,11 @@ import 'swiper/css/bundle';
 
 export default (() => {
   const swiper = new Swiper('.gallery-slider', {
-    effect: 'coverflow',
-    loop: true,
-
     slidesPerView: 'auto',
     spaceBetween: 24,
+    effect: 'coverflow',
+    loop: true,
+    grabCursor: true,
 
     keyboard: {
       enabled: true,
@@ -20,6 +20,7 @@ export default (() => {
     pagination: {
       type: 'bullets',
       el: '.swiper-pagination',
+      clickable: true,
     },
 
     navigation: {
@@ -27,7 +28,6 @@ export default (() => {
       prevEl: '.swiper-button-prev',
     },
 
-    
     breakpoints: {
       1200: {
         centeredSlides: true,
